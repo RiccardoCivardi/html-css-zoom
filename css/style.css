@@ -10,6 +10,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
+  color: #fff;
 }
 
 header,
@@ -24,6 +25,8 @@ main {
 
 img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 ul {
@@ -49,6 +52,22 @@ a {
   justify-content: flex-end;
 }
 
+.j-center {
+  justify-content: center;
+}
+
+.align-start {
+  align-content: flex-start;
+}
+
+.space-btw {
+  justify-content: space-between;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
 /* Colors */
 
 .debug {
@@ -63,10 +82,18 @@ a {
   background-color: #141414;
 }
 
+/* Containers */
+
+.card {
+  width: 190px;
+  height: 115px;
+  padding: 5px;
+  position: relative;
+}
+
 /* Buttons */
 
 .btn {
-
   background-color: #2C2C2C;
 }
 
@@ -85,6 +112,10 @@ a {
   content: '\f31e';
 }
 
+.microphone-slash::before {
+  content: '\f131';
+}
+
 
 
 
@@ -100,6 +131,16 @@ header a {
 
 
 /* MAIN */
+
+.label {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding: 4px;
+}
+
+
 
 
 /* FOOTER */
