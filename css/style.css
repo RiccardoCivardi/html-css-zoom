@@ -1,7 +1,105 @@
 /* GENERAL */
 
-* {
+*,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: boreder-box;
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+}
+
+header,
+footer {
+  height: 60px; 
+}
+
+main {
+  height: calc(100vh - 120px);
+  overflow: auto;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: #999999;
+  text-decoration: none;
+}
+
+
+/* UTILITIES */
+
+/* Flex */
+
+.d-flex {
+  display: flex;
+}
+
+.f-end {
+  justify-content: flex-end;
+}
+
+/* Colors */
+
+.debug {
+  background-color: deeppink;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-darkgrey {
+  background-color: #141414;
+}
+
+/* Buttons */
+
+.btn {
+
+  background-color: #2C2C2C;
+}
+
+/* Icons */
+
+.f-awesome::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: bold;
+}
+
+.grid::before {
+  content: '\f00a'' '; /* icona sbagliata */ 
+}
+
+.maximize::before {
+  content: '\f31e';
+}
+
+
+
+
+
+
+/* HEADER */
+
+header a {
+  margin: 5px 5px 0 0;
+  padding: 5px;
+  border-radius: 5px;  
+}
+
+
+/* MAIN */
+
+
+/* FOOTER */
