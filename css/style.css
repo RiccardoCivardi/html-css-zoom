@@ -35,8 +35,9 @@ ul {
 
 a {
   display: inline-block;
-  color: #999999;
+  color: #fff;
   text-decoration: none;
+  padding: 0 6px;
 }
 
 
@@ -60,12 +61,20 @@ a {
   align-content: flex-start;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .space-btw {
   justify-content: space-between;
 }
 
 .f-wrap {
   flex-wrap: wrap;
+}
+
+.f-column {
+  flex-direction: column;
 }
 
 /* Colors */
@@ -104,7 +113,12 @@ a {
   font-weight: bold;
 }
 
-.grid::before {
+.i-big::before {
+  font-size: 1.3rem;
+  padding-bottom: 6px;
+}
+
+.grid-3::before {
   content: '\f00a'' '; /* icona sbagliata */ 
 }
 
@@ -116,16 +130,56 @@ a {
   content: '\f131';
 }
 
+.microphone::before {
+  content: '\f130';
+}
 
+.chevron-up::before {
+  content: '\f077';
+  font-size: 0.5rem;
+}
 
+.video::before {
+  content: '\f03d';
+}
 
+.user-plus::before {
+  content: '\f234';
+}
+
+.user-group::before {
+  content: '\f500';
+}
+
+.chart-column::before {
+  content: '\e0e3';
+}
+
+.share-from-square::before {
+  content: '\f14d';
+}
+
+.comment::before {
+  content: '\f075';
+}
+
+.record-vinyl:before {
+  content: '\f8d9';
+}
+
+.grid-2::before {
+  content: '\f009'; /* icona sbagliata */ 
+}
+
+.ellipsis::before {
+  content: '\f141';
+}
 
 
 /* HEADER */
 
 header a {
   margin: 5px 5px 0 0;
-  padding: 5px;
   border-radius: 5px;  
 }
 
@@ -141,6 +195,25 @@ header a {
 }
 
 
-
-
 /* FOOTER */
+
+footer > a.btn {
+  padding: 0 15px;
+  line-height: 60px;
+  font-weight: bold;
+  color: #8A1C19;
+}
+
+/* gesttione active */
+/* metodo 1 :active */
+
+footer li > a:active::before {
+  color: #35781A;
+}
+
+/* metodo 2 (classe da assegnare) */
+.active::before {
+  color: #35781A;
+}
+
+
