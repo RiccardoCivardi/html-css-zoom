@@ -33,11 +33,14 @@ ul {
   list-style: none;
 }
 
-a {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
+span {
   padding: 0 6px;
+  display: inline-block;
+}
+
+header span,
+footer span {
+  cursor: pointer;
 }
 
 
@@ -178,9 +181,10 @@ a {
 
 /* HEADER */
 
-header a {
+header span {
   margin: 5px 5px 0 0;
-  border-radius: 5px;  
+  border-radius: 5px;
+  padding: 4px; 
 }
 
 
@@ -191,13 +195,13 @@ header a {
   position: absolute;
   bottom: 5px;
   left: 5px;
-  padding: 4px;
+  padding: 4px 6px;
 }
 
 
 /* FOOTER */
 
-footer > a.btn {
+footer > span.btn {
   padding: 0 15px;
   line-height: 60px;
   font-weight: bold;
@@ -207,7 +211,7 @@ footer > a.btn {
 /* gesttione active */
 /* metodo 1 :active */
 
-footer li > a:active::before {
+footer li > span:active::before {
   color: #35781A;
 }
 
